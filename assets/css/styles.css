@@ -1,0 +1,369 @@
+/* GLOBAL RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: var(--color-text);
+}
+/* -------------------------------------------------- */
+:root {
+	/* VARIABLES */
+	--side-left-bg: #0f172a;
+	--main-bg: #1e293b;
+	--main-light-bg: #293345;
+	--color-text: #bebebe;
+
+	/* GLOBAL STYLES */
+	font-size: 10px;
+	color: var(--color-text);
+}
+/* MAIN ELEMENTS STYLES */
+body {
+	background-color: var(--main-bg);
+	font-family: "Rubik", sans-serif;
+	height: 100vh;
+
+	display: grid;
+	grid-template-columns: 15% 1fr 25%;
+}
+svg {
+	width: 3rem;
+	height: 3rem;
+	fill: var(--color-text);
+}
+a {
+	color: #333;
+	text-decoration: none;
+} /* -------------------------------------------------- */
+/* CUSTOM CLASSES */
+.relative {
+	position: relative;
+}
+/* -------------------------------------------------- */
+/* LEFT ASIDE STYLES */
+.side-left {
+	background-color: var(--side-left-bg);
+	padding-top: 2em;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	/* gap: 1.6rem; */
+}
+/* NAVIGATION MENU */
+.logo-brand {
+	margin-bottom: 1em;
+}
+.side-left h1 {
+	font-size: 2rem;
+	font-weight: 500;
+}
+.side-left a {
+	width: 100%;
+	padding: 0.8rem 0 0.8rem 1.2em;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+.side-left a:not(.logo-brand):hover,
+.side-left a:not(.logo-brand):visited {
+	background-color: var(--main-bg);
+}
+.side-left a p {
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+/* DIVIDER */
+.divider {
+	width: 80%;
+	height: 20px;
+	margin-bottom: 2rem;
+	border-bottom: 1px solid #333;
+
+	align-self: center;
+}
+/* PLAYLISTS */
+.side-playlists {
+	width: 80%;
+	align-self: center;
+}
+.playlist-new {
+	width: 100%;
+	color: var(--color-text);
+	background-color: var(--main-bg);
+	padding: 0.4em 0.8em;
+	border: none;
+	border-radius: 1.6em;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.8rem;
+
+	cursor: pointer;
+}
+.playlist-new:hover,
+.playlist-new:visited {
+	background-color: var(--main-light-bg);
+}
+.playlist-new svg {
+	stroke: var(--side-left-bg);
+}
+.playlists {
+	margin-top: 2rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.playlist {
+	position: relative;
+	width: 100%;
+	font-size: 1.4rem;
+	font-weight: 300;
+
+	padding: 2rem;
+}
+.playlist::after {
+	content: "";
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	padding: 1rem 0;
+	position: absolute;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.playlist:last-child {
+	border: none;
+}
+.playlist:hover,
+.playlist:visited {
+	background-color: var(--main-bg);
+}
+/* -------------------------------------------------- */
+/* MAIN STYLES */
+.main {
+	background-color: var(--main-bg);
+
+	display: flex;
+	flex-direction: column;
+}
+/* HEADER AND SEARCH BAR STYLES */
+.search-bar {
+	max-width: 100%;
+	margin-top: 2rem;
+	margin-left: 2rem;
+
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+.search {
+	flex-basis: 50%;
+}
+input[type="search"] {
+	color: var(--color-text);
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 100%;
+	height: 4rem;
+	border: none;
+	border-radius: 8rem;
+
+	padding: 1rem 4rem;
+}
+input[type="search"]::placeholder {
+	color: var(--color-text);
+}
+input[type="search"]:focus-visible {
+	outline: 1px solid var(--main-bg);
+	outline-offset: -2px;
+}
+input[type="search" i]::-webkit-search-cancel-button {
+	appearance: none;
+
+	background-image: url(../images/close.svg);
+}
+.svg-magnifier {
+	width: 2.5rem;
+	height: 2.5rem;
+	stroke: var(--color-text);
+	position: absolute;
+	top: 50%;
+	left: 0.8rem;
+	transform: translateY(-50%);
+}
+/* TAGS STYLES */
+.tags {
+	display: flex;
+	gap: 1.2rem;
+}
+.tag {
+	color: var(--color-text);
+	background-color: rgba(255, 255, 255, 0.2);
+
+	border: none;
+	border-radius: 1em;
+	padding: 0.4em 0.6em;
+
+	cursor: pointer;
+}
+button.tag:hover,
+button.tag:visited {
+	color: var(--main-bg);
+	background-color: var(--color-text);
+}
+/* WELCOME TEXT STYLES */
+.welcome {
+	font-size: 3.2rem;
+	margin-top: 6rem;
+	margin-left: 2rem;
+}
+/* MAIN SECTIONS --- RECENTLY, YOUR ALBUMS, RECOMMENDED, ... */
+main {
+	min-height: 100vh;
+	overflow: scroll;
+}
+.main-container {
+	font-size: 2.4rem;
+	margin: 4rem 2rem 2rem 2rem;
+}
+.main-container-text {
+	margin-bottom: 1rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.main-container-text button {
+	font-size: 1.2rem;
+	background-color: var(--color-text);
+	color: var(--main-bg);
+	padding: 0.4em 0.6em;
+	border: none;
+	border-radius: 0.8em;
+
+	cursor: pointer;
+}
+.main-container-items {
+	display: flex;
+	gap: 2rem;
+}
+.container-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.item-image {
+	width: 22rem;
+}
+.item-title {
+	margin-top: 0.6rem;
+}
+/* -------------------------------------------------- */
+/* RIGHT ASIDE STYLES */
+.side-right {
+	width: 100%;
+	background-color: var(--main-bg);
+
+	margin: 1rem 0 0 0;
+	border-radius: 0.8em;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+/* PROFILE AND ACCOUNT */
+.profile {
+	background-color: var(--side-left-bg);
+	padding: 2em;
+	border-radius: 0.8em;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	justify-content: start;
+	column-gap: 0.8em;
+	row-gap: 2em;
+	margin-bottom: 3rem;
+	margin-right: 1rem;
+}
+.profile-username {
+	grid-column: 2 / -1;
+	align-self: center;
+}
+.profile-info {
+	display: flex;
+	align-items: center;
+	gap: 1.4rem;
+
+	grid-column: 1 / -1;
+}
+.profile a:not(.profile-info) {
+	font-size: 1.2rem;
+	color: var(--color-text);
+	padding: 0.4em 0.8em;
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	align-self: center;
+	justify-self: start;
+}
+.profile a:not(.profile-info):hover {
+	background-color: var(--color-text);
+	color: var(--side-left-bg);
+
+	border-radius: 0.8em;
+}
+.profile a:not(.profile-info):hover svg,
+.profile a:not(.profile-info):visited svg {
+	stroke: var(--side-left-bg);
+}
+.profile-image {
+	max-width: 15%;
+	border-radius: 50%;
+
+	justify-self: end;
+}
+/* NEW RELEASES AND TRENDING */
+.side-container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+	margin-right: 1em;
+	padding: 2em;
+
+	border-radius: 1em;
+
+	background-color: var(--main-light-bg);
+}
+.side-container h2 {
+	font-size: 2.4rem;
+}
+.side-container-box {
+	display: flex;
+	flex-direction: column;
+}
+.box-item {
+	background-color: var(--side-left-bg);
+
+	display: flex;
+	gap: 1.4em;
+
+	padding: 1rem;
+	margin-bottom: 0.4rem;
+
+	border-radius: 8px;
+}
+.box-item img {
+	width: 60px;
+}
+.item-info {
+	margin-top: 0.8em;
+}
+.item-title {
+	font-size: 1.6rem;
+	font-weight: 500;
+	margin-bottom: 0.2em;
+}
+.item-artist {
+	font-size: 1.2rem;
+	font-weight: 400;
+}
