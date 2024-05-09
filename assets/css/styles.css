@@ -123,6 +123,7 @@ a {
 	font-weight: 300;
 
 	padding: 2rem;
+	cursor: pointer;
 }
 .playlist::after {
 	content: "";
