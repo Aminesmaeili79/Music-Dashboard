@@ -25,7 +25,7 @@
 						d="M21,3V15.5A3.5,3.5 0 0,1 17.5,19A3.5,3.5 0 0,1 14,15.5A3.5,3.5 0 0,1 17.5,12C18.04,12 18.55,12.12 19,12.34V6.47L9,8.6V17.5A3.5,3.5 0 0,1 5.5,21A3.5,3.5 0 0,1 2,17.5A3.5,3.5 0 0,1 5.5,14C6.04,14 6.55,14.12 7,14.34V6L21,3Z"
 					/>
 				</svg>
-				<h1 class="brand-name">NegMusic</h1>
+				<h1 class="brand-name">NeginMusic</h1>
 			</a>
 			<a href="" class="home">
 				<svg
@@ -127,113 +127,215 @@
 				<h2 class="welcome-text">Welcome, Amin!</h2>
 			</div>
 			<div class="main-container">
-				<div class="main-container-text">
+				<div
+					class="main-container-text"
+					onscroll="enableScrolling(this)"
+					onmousemove="enableScrolling(this)"
+					onmouseover="enableScrolling(this)"
+					onmouseleave="disableScrolling(this)"
+				>
 					<h3>Recently Played</h3>
-					<button type="button">Show More</button>
+					<button class="show-more" type="button">Show More</button>
 				</div>
 				<div class="main-container-items">
-					<a href="" class="container-item">
-						<img
-							class="item-image"
-							src="./assets/images/after-hours.png"
-							alt=""
-						/>
-						<p class="item-title">After Hours</p>
-						<p class="item-artist">The Weeknd</p>
-					</a>
-					<a href="" class="container-item">
-						<img
-							class="item-image"
-							src="./assets/images/slipknot.jpeg"
-							alt=""
-						/>
-						<p class="item-title">Slipknot</p>
-						<p class="item-artist">Slipknot</p>
-					</a>
-					<a href="" class="container-item">
-						<img
-							class="item-image"
-							src="./assets/images/master-of-puppets.jpeg"
-							alt=""
-						/>
-						<p class="item-title">Master Of Puppets</p>
-						<p class="item-artist">Metallica</p>
-					</a>
-					<a href="" class="container-item">
-						<img
-							class="item-image"
-							src="./assets/images/born-to-die.jpeg"
-							alt=""
-						/>
-						<p class="item-title">Born To Die</p>
-						<p class="item-artist">Lana Del Rey</p>
-					</a>
-				</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/after-hours.png" alt="" />
+						</a>
+						<a href="" class="item-title">After Hours</a>
+						<a href="" class="item-artist">The Weeknd</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/born-to-die.jpeg" alt="" />
+						</a>
+						<a href="" class="item-title">Born To Die</a>
+						<a href="" class="item-artist">Lana Del Rey</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/slipknot.jpeg" alt="" />
+						</a>
+						<a href="" class="item-title">Slipknot</a>
+						<a href="" class="item-artist">Slipknot</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/master-of-puppets.jpeg" alt="" />
+						</a>
+						<a href="" class="item-title">Master Of Puppets</a>
+						<a href="" class="item-artist">Metallica</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/get-rich.jpg" alt="" />
+						</a>
+						<a href="" class="item-title">Get Rick Or Die Tryin'</a>
+						<a href="" class="item-artist">50 Cent</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/kamikaze.png" alt="" />
+						</a>
+						<a href="" class="item-title">Kamikaze</a>
+						<a href="" class="item-artist">Eminem</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/therapy-sessions.jpeg" alt="" />
+						</a>
+						<a href="" class="item-title">Therapy Session</a>
+						<a href="" class="item-artist">NF</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/starboy.png" alt="" />
+						</a>
+						<a href="" class="item-title">Starboy</a>
+						<a href="" class="item-artist">The Weeknd</a>
+					</div>
 			</div>
 			<!-- -------------------- -->
 			<div class="main-container">
-				<div class="main-container-text">
+				<div
+					class="main-container-text"
+					onscroll="enableScrolling(this)"
+					onmousemove="enableScrolling(this)"
+					onmouseover="enableScrolling(this)"
+					onmouseleave="disableScrolling(this)"
+				>
 					<h3>Recommended</h3>
-					<button type="button">Show More</button>
+					<button class="show-more" type="button">Show More</button>
 				</div>
 				<div class="main-container-items">
-					<a href="" class="container-item">
-						<img
-							class="item-image"
-							src="./assets/images/therapy-sessions.jpeg"
-							alt=""
-						/>
-						<p class="item-title">Therapy Session</p>
-						<p class="item-artist">NF</p>
-					</a>
-					<a href="" class="container-item">
-						<img class="item-image" src="./assets/images/kamikaze.png" alt="" />
-						<p class="item-title">Kamikaze</p>
-						<p class="item-artist">Eminem</p>
-					</a>
-					<a href="" class="container-item">
-						<img class="item-image" src="./assets/images/get-rich.jpg" alt="" />
-						<p class="item-title">Get Rich Or Die Tryin'</p>
-						<p class="item-artist">50 Cent</p>
-					</a>
-					<a href="" class="container-item">
-						<img class="item-image" src="./assets/images/starboy.png" alt="" />
-						<p class="item-title">Starboy</p>
-						<p class="item-artist">The Weeknd</p>
-					</a>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/savage-mode.jpeg" alt="" />
+						</a>
+						<a href="" class="item-title">Savage Mode II</a>
+						<a href="" class="item-artist">21 Savage</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/mtbmb.png" alt="" />
+						</a>
+						<a href="" class="item-title">Music To Be Murdered By</a>
+						<a href="" class="item-artist">Eminem</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/forest-hills-drive.jpeg" alt="" />
+						</a>
+						<a href="" class="item-title">Forest Hills Drive</a>
+						<a href="" class="item-artist">J. Cole</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/hybrid-theory.jpeg" alt="" />
+						</a>
+						<a href="" class="item-title">Hybrid Theory</a>
+						<a href="" class="item-artist">Linkin Park</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/we-are-not-your-kind.webp" alt="" />
+						</a>
+						<a href="" class="item-title">We Are Not Your Kind</a>
+						<a href="" class="item-artist">Slipknot</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/watermelon-sugar.jpeg" alt="" />
+						</a>
+						<a href="" class="item-title">Watermelon Sugar</a>
+						<a href="" class="item-artist">Harry Styles</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/for-those.jpeg" alt="" />
+						</a>
+						<a href="" class="item-title">For Those That Wish To Exist</a>
+						<a href="" class="item-artist">Architects</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/gasoline.jpeg" alt="" />
+						</a>
+						<a href="" class="item-title">Gasoline</a>
+						<a href="" class="item-artist">I Prevail</a>
+					</div>
 				</div>
 			</div>
 			<!-- -------------------- -->
 			<div class="main-container">
-				<div class="main-container-text">
+				<div
+					class="main-container-text"
+					onscroll="enableScrolling(this)"
+					onmousemove="enableScrolling(this)"
+					onmouseover="enableScrolling(this)"
+					onmouseleave="disableScrolling(this)"
+				>
 					<h3>Your Genres</h3>
-					<button type="button">Show More</button>
+					<button class="show-more" type="button">Show More</button>
 				</div>
 				<div class="main-container-items">
-					<a href="" class="container-item">
-						<img class="item-image" src="./assets/images/rap.png" alt="" />
-						<p class="item-title">Rap Hits</p>
-						<p class="item-artist">NegMusic</p>
-					</a>
-					<a href="" class="container-item">
-						<img class="item-image" src="./assets/images/rock.jpeg" alt="" />
-						<p class="item-title">Rock N' Roll</p>
-						<p class="item-artist">NegMusic</p>
-					</a>
-					<a href="" class="container-item">
-						<img
-							class="item-image"
-							src="./assets/images/best-of-ever.png"
-							alt=""
-						/>
-						<p class="item-title">Best Of Ever</p>
-						<p class="item-artist">User1337</p>
-					</a>
-					<a href="" class="container-item">
-						<img class="item-image" src="./assets/images/carpool.jpeg" alt="" />
-						<p class="item-title">Carpool Karaoke</p>
-						<p class="item-artist">NegMusic</p>
-					</a>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/best-of-ever.png" alt="" />
+						</a>
+						<a href="" class="item-title">Best Of Ever</a>
+						<a href="" class="item-artist">NeginMusic</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/carpool.jpeg" alt="" />
+						</a>
+						<a href="" class="item-title">Carpool Karaoke</a>
+						<a href="" class="item-artist">User1337</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/rock.jpeg" alt="" />
+						</a>
+						<a href="" class="item-title">Rock N Roll</a>
+						<a href="" class="item-artist">NeginMusic</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/rap.png" alt="" />
+						</a>
+						<a href="" class="item-title">Hottest Rap Hits</a>
+						<a href="" class="item-artist">User420</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/throw-back.jpeg" alt="" />
+						</a>
+						<a href="" class="item-title">ThrowBack</a>
+						<a href="" class="item-artist">NeginMusic</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/gaming.jpeg" alt="" />
+						</a>
+						<a href="" class="item-title">Gaming Tracks</a>
+						<a href="" class="item-artist">UserG4M3R</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/lofi.png" alt="" />
+						</a>
+						<a href="" class="item-title">Lofi Music</a>
+						<a href="" class="item-artist">NeginMusic</a>
+					</div>
+					<div href="" class="container-item">
+						<a href="" class="item-image">
+							<img src="./assets/images/classical.jpeg" alt="" />
+						</a>
+						<a href="" class="item-title">Classical Rewind</a>
+						<a href="" class="item-artist">Aminesmaeili79</a>
+					</div>
+
 				</div>
 			</div>
 		</main>
@@ -288,7 +390,7 @@
 						<img src="./assets/images/after-hours.png" alt="" />
 						<div class="item-info">
 							<h3 class="item-title">After Hours</h3>
-							<h4 class="item-artist">The Weekend</h4>
+							<h4 class="item-artist">The Weeknd</h4>
 						</div>
 					</a>
 					<a href="" class="box-item">
@@ -315,7 +417,7 @@
 						<img src="./assets/images/blinding-lights.jpeg" alt="" />
 						<div class="item-info">
 							<h3 class="item-title">Blinding Lights</h3>
-							<h4 class="item-artist">The Weekend</h4>
+							<h4 class="item-artist">The Weeknd</h4>
 						</div>
 					</a>
 					<a href="" class="box-item">
@@ -335,5 +437,30 @@
 				</div>
 			</div>
 		</aside>
+
+		<script>
+			// Select all elements with the class .main-container-items
+			const mainContainerItems = document.querySelectorAll(
+				".main-container-items"
+			);
+
+			// Function to disable scrolling on a specific element
+			function disableScrolling(element) {
+				element.style.overflow = "hidden";
+			}
+
+			// Function to enable scrolling on a specific element
+			function enableScrolling(element) {
+				element.style.overflow = "scroll";
+			}
+
+			// Add event listeners to each element
+			mainContainerItems.forEach((item) => {
+				item.onscroll = () => enableScrolling(item);
+				item.onmousemove = () => enableScrolling(item);
+				item.onmouseover = () => enableScrolling(item);
+				item.onmouseleave = () => disableScrolling(item);
+			});
+		</script>
 	</body>
 </html>

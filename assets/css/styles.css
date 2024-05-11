@@ -12,6 +12,7 @@
 	--main-bg: #1e293b;
 	--main-light-bg: #293345;
 	--color-text: #bebebe;
+	--color-text-hover: #c4c9e5;
 
 	/* GLOBAL STYLES */
 	font-size: 10px;
@@ -115,6 +116,8 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+
+	overflow: scroll;
 }
 .playlist {
 	position: relative;
@@ -144,6 +147,7 @@ a {
 /* -------------------------------------------------- */
 /* MAIN STYLES */
 .main {
+	padding: 0 1rem;
 	background-color: var(--main-bg);
 
 	display: flex;
@@ -235,7 +239,7 @@ main {
 	justify-content: space-between;
 	align-items: center;
 }
-.main-container-text button {
+.show-more {
 	font-size: 1.2rem;
 	background-color: var(--color-text);
 	color: var(--main-bg);
@@ -244,10 +248,36 @@ main {
 	border-radius: 0.8em;
 
 	cursor: pointer;
+
+	transition: all 0.1s;
+}
+.show-more:hover {
+	color: var(--color-text-hover);
+	background-color: var(--main-light-bg);
 }
 .main-container-items {
+	padding-bottom: 1rem;
 	display: flex;
 	gap: 2rem;
+
+	overflow: hidden;
+}
+.main-container-items::-webkit-scrollbar {
+	width: 0;
+	height: 4px;
+}
+.main-container-items::-webkit-scrollbar-track {
+	background-color: var(--side-left-bg);
+	border-radius: 2rem;
+	width: 1rem;
+}
+.main-container-items::-webkit-scrollbar-thumb {
+	background-color: var(--color-text);
+	border-radius: 2rem;
+	width: 1rem;
+}
+.main-container-items::-webkit-scrollbar-button {
+	display: none;
 }
 .container-item {
 	display: flex;
@@ -256,9 +286,40 @@ main {
 }
 .item-image {
 	width: 22rem;
+
+	transition: all 0.1s;
+}
+.item-image img {
+	width: 22rem;
+}
+.item-image:hover {
+	transform: scale(1.1);
+}
+.main-container-items:hover .item-image:not(:hover) {
+	filter: grayscale(100%);
+	opacity: 0.75;
+}
+.container-item:hover .item-title:not(:hover) {
+	color: var(--color-text-hover);
+}
+.container-item:hover .item-image:not(:hover) {
+	transform: scale(1.1);
+	filter: grayscale(0);
+	opacity: 1;
 }
 .item-title {
-	margin-top: 0.6rem;
+	color: var(--color-text);
+	margin-top: 0.8rem;
+}
+.item-title:hover {
+	color: var(--color-text-hover);
+}
+.item-artist {
+	color: var(--color-text);
+}
+
+.item-artist:hover {
+	color: #e7e1ab;
 }
 /* -------------------------------------------------- */
 /* RIGHT ASIDE STYLES */
