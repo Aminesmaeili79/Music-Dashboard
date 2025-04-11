@@ -1,3 +1,7 @@
-# Dashboard
-A generic dashboard for The Odin Project
-## <a href="https://aminesmaeili79.github.io/Music-Dashboard/" target="_blank">Live Preview</a>
+# Music Dashboard
+
+---
+
+A beautiful yet minimalistic music dashboard panel - Pure CSS - The Odin Project
+
+> [Live Demo](https://aminesmaeili79.github.io/Music-Dashboard/)
